@@ -13,11 +13,9 @@
                 "typeHandlerVersion": "1.10",
                 "autoUpgradeMinorVersion": true,
                 "protectedSettings": {
-                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File script.ps1",
-                    "storageAccountName": "npwvdprofiles",
-                    "storageAccountKey": "XxssORl4VqzEuoy4EMTEA9OHLMGEqP4EDgrHqdqzro69LCUkcQLl0tdF1SemqTuWyq1tpoDT1uivW1QDuaycsQ",
+                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File WVDAppInstalls.ps1",
                     "fileUris": [
-                        https://npwvdprofiles.file.core.windows.net/wvd-user-profiles/script.ps1
+                        "https://raw.githubusercontent.com/craigwoodburntpb/ARMtemplates/main/WVDAppInstalls.ps1"
                     ]
                 }
             }
