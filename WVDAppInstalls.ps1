@@ -31,7 +31,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
     
     }
 
-# Change timezone to Australia
+# Change timezone to Australia 
     Write-Host -f Green "Started Script at $(Get-TimeStamp) in the wrong timezone. Fixing time zone now..."
     set-timezone -name "AUS Eastern Standard Time"
     Write-Host -f Green "Timezone Corrected $(Get-TimeStamp)"
@@ -252,7 +252,7 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
         icacls C:\Windows\Web\4K\Wallpaper\Windows\*.* /Grant "System:(F)"
         icacls C:\Windows\Web\4K\Wallpaper\Windows\*.* /Grant "Administrators:(F)"
         del c:\windows\WEB\wallpaper\Windows\img0.jpg
-        Remove-Item –path C:\Windows\Web\4K\Wallpaper\Windows\*
+        Remove-Item Â–path C:\Windows\Web\4K\Wallpaper\Windows\*
         copy "\\c1sccm01\sources\WindowsVirtualDesktop\public pictures folder on WVD\Desktop-background_v1.jpg" c:\windows\WEB\wallpaper\Windows\img0.jpg
   
     # Create iMIS DesktopShortcut
