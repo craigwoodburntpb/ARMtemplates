@@ -1,0 +1,26 @@
+{
+    "$schema": https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#,
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "apiVersion": "2018-06-01",
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "name": "Name/config-app",
+            "location": "Australia Central",
+            "properties": {
+                "publisher": "Microsoft.Compute",
+                "type": "CustomScriptExtension",
+                "typeHandlerVersion": "1.10",
+                "autoUpgradeMinorVersion": true,
+                "protectedSettings": {
+                    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File script.ps1",
+                    "storageAccountName": "npwvdprofiles",
+                    "storageAccountKey": "XxssORl4VqzEuoy4EMTEA9OHLMGEqP4EDgrHqdqzro69LCUkcQLl0tdF1SemqTuWyq1tpoDT1uivW1QDuaycsQ",
+                    "fileUris": [
+                        https://npwvdprofiles.file.core.windows.net/wvd-user-profiles/script.ps1
+                    ]
+                }
+            }
+        }
+    ]
+}
