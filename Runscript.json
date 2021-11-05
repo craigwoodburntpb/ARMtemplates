@@ -7,6 +7,9 @@
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "name": "virtualMachineName/config-app",
             "location": "Australia Central",
+            "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'),copyindex())]"
+                ],
             "properties": {
                 "publisher": "Microsoft.Compute",
                 "type": "CustomScriptExtension",
