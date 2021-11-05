@@ -5,7 +5,7 @@
         {
             "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines/extensions",
-            "name": "Name/config-app",
+            "name": "virtualMachineName/config-app",
             "location": "Australia Central",
             "properties": {
                 "publisher": "Microsoft.Compute",
